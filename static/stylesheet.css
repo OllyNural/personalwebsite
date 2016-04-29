@@ -1,0 +1,41 @@
+.home {
+	/*background-color: #c23241;*/
+	/*background-image: url("static/img/home-background.jpg");*/
+}
+
+.home-photo {
+}
+
+.home-about {
+	background-color: #ffffff;
+}
+
+.home-links {
+	background-color: #d3d3d3;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+h1, p {
+	font-family: Raleway;
+	background: none;
+}
+
+/* Backgrounds will cover all the section
+	* --------------------------------------- */
+.section{
+	background-size: cover;
+}
+
+.slide{
+	background-size: cover;
+}
+
+#section-home {
+	background-image: url("img/home-background2.jpg");
+	padding: 0% 0 0 0;
+}
