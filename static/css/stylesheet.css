@@ -32,11 +32,14 @@ p {
 
 .nav-button {
 	background: rgba(0, 0, 0, 0.15);
-	border-radius: 3px;
+	border-radius: 25%;
 	color: #fff;
 	cursor: pointer;
 	position: fixed;
 	font-size: 40px;
+	transition: bottom ease-in-out 0.3s;
+	-webkit-transition: bottom ease-in-out 0.3s;
+	-moz-transition: bottom ease-in-out 0.3s;
 }
 
 .nav-button.go-up {
@@ -52,6 +55,19 @@ p {
 .nav-button.go-down {
 	right:140px;
 	bottom:20px;
+}
+
+.go-up:hover {
+	bottom: 15px;
+}
+
+.go-down:hover {
+	bottom: 15px;
+}
+
+.social-links {
+	margin-left: 9%;
+	font-size: 35px;
 }
 
 
@@ -102,3 +118,10 @@ p {
   -moz-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
+
+.fade-in.go-down, .fade-in.go-up, .fade-in.go-home {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
