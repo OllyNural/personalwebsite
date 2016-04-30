@@ -30,6 +30,10 @@ p {
 	font-size: 1.5em;
 }
 
+a:hover, a:link, a:visited {
+	color: #000000;
+}
+
 .nav-button {
 	background: rgba(0, 0, 0, 0.15);
 	border-radius: 25%;
@@ -66,10 +70,51 @@ p {
 }
 
 .social-links {
-	margin-left: 9%;
-	font-size: 35px;
+	margin-top: 45px;
 }
 
+.social-links span {
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+}
+
+.social-links .social-text  {
+	width: 100%;
+	text-align: center;
+}
+
+/*
+	For the social links
+*/
+.github-text {
+	display: none;
+}
+.linkedin-text {
+	display: none;
+}
+.twitter-text {
+	display: none;
+}
+.facebook-text {
+	display: none;
+}
+
+.github-image:hover .github-text {
+	display: block;
+}
+
+.linkedin-image:hover .linkedin-text {
+	display: block;
+}
+
+.twitter-image:hover .twitter-text {
+	display: block;
+}
+
+.facebook-image:hover .facebook-text {
+	display: block;
+}
 
 
 /* Backgrounds will cover all the section

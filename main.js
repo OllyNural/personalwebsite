@@ -69,3 +69,11 @@ function goDown() {
 function goHome() {
 	$.fn.fullpage.moveTo(1);
 }
+
+// $('.github-image').mouseover(function() {
+//   $('.github-text').css("visibility","visible");
+// });
+
+// $('.github-image').mouseout(function() {
+//   $('.github-text').css("visibility","hidden");
+// });
