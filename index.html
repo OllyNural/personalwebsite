@@ -4,10 +4,12 @@
 	<title>Oliver Nural</title>
 
 	<link rel="stylesheet" type="text/css" href="resources/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="static/bootstrap.css"/>
-	<link rel="stylesheet" type="text/css" href="static/stylesheet.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="static/css/stylesheet.css"/>
+	<link rel="stylesheet" type="text/css" href="static/css/font-awesome/css/font-awesome.css"/>
 	<!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway"/> -->
-	<link rel="stylesheet" type="text/css" hred="static/raleway"/>
+	<link rel="stylesheet" type="text/css" hred="static/css/raleway"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
 	<script src="resources/vendors/jquery.easings.min.js"></script>
@@ -21,14 +23,13 @@
 	    <div id="section-home" class="section">
 		    <div class="container home">
 			    <div class="row">
-				    <div class="home-photo col-xs-4">
+				    <div class="home-photo fade-in col-xs-4">
 				   		<img src="static/img/home-photo.jpg">
 					</div>
-					<div class="home-about col-xs-4 col-xs-offset-1">
-						<h1>Hello</h1>
-						<p>This is in raleway!</p>
+					<div class="home-about fade-in col-xs-5 col-xs-offset-1">
+						<h1>Welcome</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur rutrum purus, ac tempor dui suscipit et. Praesent vitae varius justo. Nunc consectetur vitae ex ut sagittis. Praesent scelerisque diam et felis consequat aliquet. Aenean porta erat eu tincidunt hendrerit. Ut finibus pharetra dolor eget consectetur. Sed sodales, felis eget vulputate porta, lectus neque ullamcorper eros, convallis vulputate dolor mauris a ligula. Sed sit amet dui eget tortor accumsan euismod vel eget lectus. Suspendisse placerat, enim sit amet imperdiet ornare, magna tellus convallis dolor, ac ultrices diam est id neque. Fusce urna nisl, faucibus sit amet lacus suscipit, pellentesque pellentesque elit. Curabitur mauris nunc, faucibus vel auctor sit amet, laoreet ut orci.</p>
 					</div>
-					<button onclick="goDown()">Go Down!</button>
 				</div>
 			</div>
 		</div>
@@ -47,5 +48,21 @@
 			<button onclick="goHome()">Go Home</button>
 		</div>
 	</div>
+	<div class="nav-button go-up">
+		<span class="fa fa-chevron-up"></span>
+	</div>
+	<div class="nav-button go-home">
+		<span class="fa fa-home"></span>
+	</div>
+	<div class="nav-button go-down">
+		<span class="fa fa-chevron-down"></span>
+	</div>
+	<!-- <span onclick="goUp()" class="nav-button glyphicon glyphicon-circle-arrow-up"></span>
+	<a href="#">
+		<span onclick="goHome()" class="glyphicon glyphicon-home"></span>
+	</a>
+	<a href="#">
+		<span onclick="goDown()" class="glyphicon glyphicon-circle-arrow-down"></span>
+	</a> -->
 </body>
 </html>
