@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="static/css/font-awesome/css/font-awesome.css"/>
 	<link rel="stylesheet" type="text/css" hred="static/css/raleway"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
 	<script src="resources/vendors/jquery.easings.min.js"></script>
 	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
@@ -26,33 +27,35 @@
 				   		<img src="static/img/home-photo.jpg">
 				   		<div class="row social-links">
 				   			<div class="col-xs-3 github-image">
-					   			<a href="https://github.com/OllyNural" target="_blank">
-						   			<span class="fa fa-github"></span>
-						   		</a>
-					   			<div class="social-text github-text">Github</div>
+								<a href="https://github.com/OllyNural" target="_blank">
+							   		<span class="fa fa-github"></span>
+							   	</a>
+					   			<div class="social-text github-text">GitHub</div>
 					   		</div>
 				   			<div class="col-xs-3 linkedin-image">
 				   				<a href="https://www.linkedin.com/in/oliver-nural-43565497" target="_blank">
 					   				<span class="fa fa-linkedin-square"></span>
 					   			</a>
-					   			<div class="social-text linkedin-text">linkedin</div>
+					   			<div class="social-text linkedin-text">LinkedIn</div>
 					   		</div>
 				   			<div class="col-xs-3 twitter-image">
 				   				<a href="https://twitter.com/OliverNural">
 					   				<span class="fa fa-twitter-square"></span>
 					   			</a>
-					   			<div class="social-text twitter-text">twitter</div>
+					   			<div class="social-text twitter-text">Twitter</div>
 					   		</div>
 					   		<div class="col-xs-3 facebook-image">
 					   			<a href="https://www.facebook.com/Olly.Nural" target="_blank">
 					   				<span class="fa fa-facebook-square"></span>
 					   			</a>
-					   			<div class="social-text facebook-text">facebook</div>
-					   		</div>
+					   			<div class="social-text facebook-text">Facebook</div>
+					   		</div> 
 				   		</div>
 					</div>
 					<div class="home-about fade-in col-xs-5 col-xs-offset-1">
-						<h1>Welcome</h1>
+				   		<div class="name-space">
+				   			Oliver Nural
+				   		</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur rutrum purus, ac tempor dui suscipit et. Praesent vitae varius justo. Nunc consectetur vitae ex ut sagittis. Praesent scelerisque diam et felis consequat aliquet. Aenean porta erat eu tincidunt hendrerit. Ut finibus pharetra dolor eget consectetur. Sed sodales, felis eget vulputate porta, lectus neque ullamcorper eros, convallis vulputate dolor mauris a ligula. Sed sit amet dui eget tortor accumsan euismod vel eget lectus. Suspendisse placerat, enim sit amet imperdiet ornare, magna tellus convallis dolor, ac ultrices diam est id neque. Fusce urna nisl, faucibus sit amet lacus suscipit, pellentesque pellentesque elit. Curabitur mauris nunc, faucibus vel auctor sit amet, laoreet ut orci.</p>
 					</div>
 				</div>
@@ -65,22 +68,32 @@
 		</div>
 	    <div class="section">Some section
 			<button onclick="goUp()">Go Up!</button>
-			<button onclick="goDown()">Go Down!</button>
-			<button onclick="goHome()">Go Home</button>
-		</div>
-	    <div class="section">Some section
-			<button onclick="goUp()">Go Up!</button>
 			<button onclick="goHome()">Go Home</button>
 		</div>
 	</div>
-	<div onclick="goUp()" class="fade-in nav-button go-up">
-		<span class="fa fa-chevron-up"></span>
-	</div>
-	<div onclick="goHome()" class="fade-in nav-button go-home">
-		<span class="fa fa-home"></span>
-	</div>
-	<div onclick="goDown()" class="fade-in nav-button go-down">
-		<span class="fa fa-chevron-down"></span>
+	<div class="side-nav-bar">
+		<div class="nav-bar-wrapper">
+			<ul>
+				<li onclick="goUp()" class="fade-in nav-button go-up">
+					<span class="fa fa-chevron-up"></span>
+				</li>
+				<li onclick="goToPage(1)" class="fade-in nav-button go-home">
+					<span class="fa fa-home"></span>
+					<div class="nav-bar-text">Home</div>
+				</li>
+				<li onclick="goToPage(2)" class="fade-in nav-button go-portfolio">
+					<span class="fa fa-briefcase"></span>
+					<div class="nav-bar-text">Portfolio</div>
+				</li>
+				<li onclick="goToPage(3)" class="fade-in nav-button go-contact">
+					<span class="fa fa-envelope"></span>
+					<div class="nav-bar-text">Contact</div>
+				</li>
+				<li onclick="goDown()" class="fade-in nav-button go-down">
+					<span class="fa fa-chevron-down"></span>
+				</li>
+			</ul>
+		</div>
 	</div>
 </body>
 </html>

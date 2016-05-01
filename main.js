@@ -2,9 +2,9 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
-        lockAnchors: false,
+        lockAnchors: true,
         anchors:['Home', 'About Me', 'Projects', 'Contact Me'],
-        navigation: true,
+        navigation: false,
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'About Me', 'Projects', 'Contact Me'],
         showActiveTooltip: true,
@@ -66,14 +66,6 @@ function goDown() {
 	$.fn.fullpage.moveSectionDown();
 }
 
-function goHome() {
-	$.fn.fullpage.moveTo(1);
+function goToPage(int) {
+	$.fn.fullpage.moveTo(int);
 }
-
-// $('.github-image').mouseover(function() {
-//   $('.github-text').css("visibility","visible");
-// });
-
-// $('.github-image').mouseout(function() {
-//   $('.github-text').css("visibility","hidden");
-// });
